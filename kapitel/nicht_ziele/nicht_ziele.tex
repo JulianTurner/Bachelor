@@ -1,6 +1,30 @@
 \section{Nicht-Ziele}
 
+Diese Arbeit konzentriert sich ausschließlich auf die Untersuchung der Effizienz und Robustheit bildbasierter Navigationsmethoden für \ac{UGV}s. 
+Um den Fokus klar zu halten und die Reichweite der Arbeit zu definieren, werden folgende Aspekte bewusst nicht behandelt:
+
 \begin{itemize}
-    \item Diese Arbeit befasst sich nicht mit der Frage, wie die Daten vom \ac{UAV} zum Fahrzeug übertragen werden.
-    \item Sicherheitsaspekte zur Vermeidung von Risiken werden nicht behandelt, da der Fokus auf der Untersuchung der bildbasierten Navigationsmethoden liegt.
+  \item Datenübertragung zwischen \ac{UAV} und \ac{UGV}: 
+    Diese Arbeit befasst sich nicht mit der Frage, wie die Daten vom \ac{UAV} zum \ac{UGV} übertragen werden. 
+    Die technischen Details der Kommunikationsinfrastruktur zwischen \ac{UAV} und \ac{UGV} liegen außerhalb des Rahmens dieser Untersuchung und werden nicht analysiert.
+
+  \item Sicherheitsaspekte: 
+    Sicherheitsaspekte zur Vermeidung von Risiken werden nicht behandelt, da der Fokus auf der Untersuchung der bildbasierten Navigationsmethoden liegt. 
+    Fragen zur Vermeidung von Kollisionen oder zur Sicherheitszertifizierung der Systeme sind nicht Teil dieser Arbeit und werden bewusst ausgeklammert.
+
+  \item Entwicklung von Bildverarbeitungsalgorithmen: 
+    Die Arbeit konzentriert sich auf die Anwendung bestehender Bildverarbeitungsalgorithmen zur Navigation und nicht auf die Entwicklung oder Optimierung neuer Algorithmen. 
+    Die Leistung und Anpassung der Algorithmen wird untersucht, jedoch ohne tiefere technische Eingriffe in deren Struktur.
+
+  \item Wirtschaftliche Analyse: 
+    Eine wirtschaftliche Analyse der Implementierung der Navigationssysteme oder der Vergleich der Kosten verschiedener Technologien wird nicht durchgeführt. 
+    Die Arbeit bleibt auf die technischen und methodischen Aspekte der Navigation beschränkt.
+
+  \item Analyse anderer Sensorik: 
+    Diese Arbeit untersucht ausschließlich bildbasierte Methoden und schließt die Analyse anderer Sensortechnologien wie \gls{LIDAR}, Radar oder Ultraschall bewusst aus.
+
+  \item GPS-Verfügbarkeit: 
+    Diese Arbeit geht von einer kontinuierlich funktionierenden \ac{GPS}-Verfügbarkeit aus und untersucht nicht die Navigationsmethoden in \gls{GPS-denied} Umgebungen. 
+    Szenarien, in denen das \ac{GPS}-Signal gestört oder nicht verfügbar ist, werden daher bewusst nicht betrachtet.
 \end{itemize}
+

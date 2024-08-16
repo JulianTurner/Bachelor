@@ -1,13 +1,32 @@
-\section{Einleitung}
-Autonome Fahrzeuge, die in der Lage sind, komplexes Gelände autonom zu durchqueren, stehen vor der Herausforderung, 
-effektive Navigationsmethoden zu nutzen. 
-Insbesondere ist unklar, ob ein autonomes Fahrzeug eigenständig den besten Weg zu einem Zielpunkt finden 
-sollte oder ob es besser wäre, ein \ac{UAV} zur Unterstützung einzusetzen, 
-das die Umgebung erkundet und eine Liste von Wegpunkten an das Fahrzeug übermittelt.
+% \section{Einleitung}
+% Autonome Fahrzeuge, die in der Lage sind, komplexes Gelände autonom zu durchqueren, stehen vor der Herausforderung, 
+% effektive Navigationsmethoden zu nutzen. 
+% Insbesondere ist unklar, ob ein autonomes Fahrzeug eigenständig den besten Weg zu einem Zielpunkt finden 
+% sollte oder ob es besser wäre, ein \ac{UAV} zur Unterstützung einzusetzen, 
+% das die Umgebung erkundet und eine Liste von Wegpunkten an das Fahrzeug übermittelt.
+%
+% Tesla begann 2019 damit \gls{LIDAR} für die Navigation zu entfernen und setzt zunehmend auf bildbasierte Systeme, 
+% die Kameras und fortschrittliche Computer-Vision-Algorithmen nutzen, um das Umfeld zu erfassen und zu navigieren \}.
+% Diese Arbeit konzentriert sich auf die Untersuchung der Effizienz und Robustheit von Navigationsmethoden, 
+% die ausschließlich auf Bildverarbeitung basieren. 
+% Diese Forschung wird im Rahmen eines größeren Forschungsumfelds durchgeführt, 
+% das auch das \ac{IMUGS}-Projekt umfasst, obwohl die Arbeit selbst nicht direkt in das Projekt integriert ist.
+%
 
-Junge Fahrzeughersteller, wie Tesla, setzen zunehmend auf bildbasierte Systeme, 
-die Kameras und fortschrittliche Computer-Vision-Algorithmen nutzen, um das Umfeld zu erfassen und zu navigieren.
-Diese Arbeit konzentriert sich auf die Untersuchung der Effizienz und Robustheit von Navigationsmethoden, 
-die ausschließlich auf Bildverarbeitung basieren. 
-Diese Forschung wird im Rahmen eines größeren Forschungsumfelds durchgeführt, 
-das auch das \ac{IMUGS}-Projekt umfasst, obwohl die Arbeit selbst nicht direkt in das Projekt integriert ist.
+\section{Einleitung}
+
+\ac{UGV} spielen eine immer wichtigere Rolle in verschiedenen Anwendungsbereichen, insbesondere in der Verteidigung, Katastrophenhilfe und industriellen Automatisierung. 
+Ihre Fähigkeit, komplexes und gefährliches Gelände autonom zu durchqueren, macht sie zu unverzichtbaren Werkzeugen in Szenarien, in denen menschliche Intervention schwierig oder gefährlich ist \cite{uav:ugv:search:rescue}. 
+\ac{UGV} bieten dabei nicht nur operative Vorteile, sondern tragen auch zur Sicherheit und Effizienz in kritischen Situationen bei \cite{ugv:system:indonesia}. 
+Angesichts der wachsenden Herausforderungen, denen Europa in sicherheitsrelevanten Bereichen gegenübersteht, hat die Europäische Union den Bedarf erkannt, die Entwicklung solcher Systeme voranzutreiben. 
+Dies spiegelt sich unter anderem im \ac{IMUGS}-Projekt wider, das darauf abzielt, modulare und skalierbare unbemannte Bodensysteme zu entwickeln, die den spezifischen Anforderungen der EU-Mitgliedstaaten gerecht werden \cite{mil:ugv:attitudes}.
+Die Navigation von \ac{UGV} in unwegsamem Gelände stellt jedoch eine erhebliche technische Herausforderung dar. 
+Es ist insbesondere unklar, ob ein autonomes Fahrzeug eigenständig den optimalen Weg zu einem Zielpunkt finden sollte oder ob es effizienter wäre, ein \ac{UAV} zur Unterstützung einzusetzen, das die Umgebung erkundet und eine Liste von Wegpunkten an das Fahrzeug übermittelt \cite{ugv:coverage:energy:efficient}. 
+Diese Fragestellung ist von entscheidender Bedeutung, da die Wahl der Navigationsmethode direkten Einfluss auf die Einsatzfähigkeit und Zuverlässigkeit von \ac{UGV} hat \cite{ugv:uav:cooperative:ranging}.
+In den letzten Jahren haben führende Fahrzeughersteller, wie Tesla, begonnen, \gls{LIDAR} für die Navigation zu entfernen und stattdessen zunehmend auf bildbasierte Systeme zu setzen \cite{website:tesla:suppport}. 
+Diese Systeme nutzen Kameras und fortschrittliche Computer-Vision-Algorithmen, um das Umfeld zu erfassen und zu navigieren \cite{website:tesla:suppport}. 
+Bildverarbeitungstechnologien bieten eine kosteneffiziente Alternative zu \gls{LIDAR}, erfordern jedoch hochpräzise und robuste Algorithmen, um in realen Einsatzszenarien zuverlässig zu funktionieren \cite{mil:ugv:attitudes}.
+Diese Arbeit konzentriert sich auf die Untersuchung der Effizienz und Robustheit von Navigationsmethoden, die ausschließlich auf Bildverarbeitung basieren. 
+Die Forschung wird im Rahmen eines größeren Forschungsumfelds durchgeführt, das auch das \ac{IMUGS}-Projekt umfasst, obwohl die Arbeit selbst nicht direkt in das Projekt integriert ist. 
+Ziel dieser Arbeit ist es, fundierte Erkenntnisse darüber zu gewinnen, wie verschiedene bildbasierte Navigationsansätze in unterschiedlichen Geländearten abschneiden und welche Methoden sich für den Einsatz in zukünftigen \ac{UGV}-Systemen besonders eignen.
+

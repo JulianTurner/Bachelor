@@ -1,15 +1,16 @@
 \section{Zielsetzung}
 
-Das Ziel dieser Arbeit ist es, die Effizienz und Robustheit bildbasierter Navigationsmethoden für ein \ac{UGV} zu untersuchen. 
-Dabei werden zwei Ansätze verglichen:
+Das Ziel dieser Arbeit ist es, die Effizienz und Robustheit bildbasierter Navigationsmethoden für ein \ac{UGV} zu untersuchen. Dabei werden zwei Ansätze miteinander verglichen:
 
 \begin{enumerate}
-    \item 
+    \item Eigenständige Navigation: 
     Das Fahrzeug erhält lediglich einen Zielpunkt und findet den Weg selbstständig anhand der Bilder, die von den am \ac{UGV} angebrachten Kameras erfasst werden. 
-    Hierbei wird der Videostream des \ac{UGV} ausgewertet, um die Route in Echtzeit zu generieren. 
-    \item 
-    Ein \ac{UAV} fliegt zum Zielpunkt, untersucht das Gelände mittels Bildverarbeitung in der \gls{BirdView}-Perspektive und übergibt \ac{UGV} eine Liste von Wegpunkten. 
+    Der Videostream des \ac{UGV} wird in Echtzeit ausgewertet, um die optimale Route zu generieren.
+    \item UAV-unterstützte Navigation: 
+    Ein \ac{UAV} fliegt zum Zielpunkt, untersucht das Gelände aus der \gls{BirdView}-Perspektive mittels Bildverarbeitung und übergibt dem \ac{UGV} eine Liste von Wegpunkten zur Navigation. 
+    Das \ac{UGV} folgt diesen Wegpunkten, um das Ziel zu erreichen.
 \end{enumerate}
 
-Ein weiterer Fokus liegt darauf, die Flexibilität und Anpassungsfähigkeit dieser Ansätze in verschiedenen Geländetypen zu bewerten. 
-Für das Experiment wird Python, \gls{OpenCV}, \gls{AirSim} und die \gls{Unreal Engine} verwendet.
+Ein weiterer Schwerpunkt der Arbeit liegt auf der Bewertung der Flexibilität und Anpassungsfähigkeit dieser Ansätze in unterschiedlichen Geländetypen. 
+Die Untersuchung wird unter Verwendung von Python, \gls{OpenCV}, \gls{AirSim} und der \gls{Unreal Engine} durchgeführt.
+
