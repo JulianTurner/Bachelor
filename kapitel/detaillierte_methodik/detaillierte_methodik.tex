@@ -1,27 +1,21 @@
+
 \section{Detaillierte Methodik}
 
-\subsection{Simulationsumgebung und Tools}
+Die Experimente werden in der Simulationsumgebung \gls{AirSim} durchgeführt, einem hochrealistischen Simulator für autonome Fahrzeuge und Drohnen, der auf der \gls{Unreal Engine} basiert \cite{airsim2017fsr}. 
+\gls{AirSim} ermöglicht es, unterschiedliche Geländearten und Umgebungsbedingungen realistisch zu simulieren, was für die Untersuchung der Effizienz und Robustheit der verschiedenen bildbasierten Navigationsansätze von entscheidender Bedeutung ist \cite{mapless:ugv:navigation}. 
+Die Simulationen werden mehrere Szenarien umfassen, um die Leistungsfähigkeit der Navigationsalgorithmen unter verschiedenen Bedingungen zu testen \cite{multi:objective:ugv:navigation}.
 
-Die Experimente werden in der Simulationsumgebung \gls{AirSim} durchgeführt, einem hochrealistischen Simulator für autonome Fahrzeuge und Drohnen, der auf der \gls{Unreal Engine} basiert. 
-\gls{AirSim} ermöglicht es, unterschiedliche Geländearten und Umgebungsbedingungen realistisch zu simulieren, was für die Untersuchung der Effizienz und Robustheit der verschiedenen bildbasierten Navigationsansätze von entscheidender Bedeutung ist. 
-Die Simulationen werden mehrere Szenarien umfassen um die Leistungsfähigkeit der Navigationsalgorithmen unter verschiedenen Bedingungen zu testen.
+Für die Erstellung der Wegpunkte wird \gls{OpenCV} verwendet, um den Videostream des \ac{UAV} und des \ac{UGV} auszuwerten und die relevanten Informationen für die Navigation des Fahrzeugs zu extrahieren \cite{autonomous:flight:uwb:positioning}. 
+Die Algorithmen, die dabei zum Einsatz kommen, umfassen unter anderem Optical Flow, Kantenextraktion und \gls{Feature Matching}, um Hindernisse zu identifizieren und den sichersten Pfad zu bestimmen \cite{image:processing:uav:autonomous}. 
+Diese Algorithmen werden durch eine iterative Anpassung optimiert, um die bestmögliche Leistung unter realen Bedingungen zu erzielen \cite{ugv:coverage:energy:efficient}.
 
-\subsection{\gls{OpenCV}-basierte Wegpunkterstellung}
-
-Für die Erstellung der Wegpunkte wird \gls{OpenCV} verwendet, um den Videostream des \ac{UAV} und des \ac{UGV} auszuwerten und die relevanten Informationen für die Navigation des Fahrzeugs zu extrahieren. 
-Die Algorithmen, die zum Einsatz kommen, umfassen unter anderem Optical Flow Kantenextraktion und \gls{Feature Matching}, um Hindernisse zu identifizieren und den sichersten Pfad zu bestimmen. 
-Diese Algorithmen werden durch eine iterative Anpassung optimiert, um die bestmögliche Leistung unter realen Bedingungen zu erzielen.
-
-\subsection{Experimenteller Ablauf}
+Der experimentelle Ablauf gliedert sich in folgende Schritte:
 
 \begin{enumerate}
-    \item \textbf{Vorbereitung der Simulationsumgebungen:} 
-    Es werden verschiedene Geländetypen simuliert, deren genaue Ausgestaltung noch festgelegt wird. 
-    Diese Szenarien werden durch eine Kombination aus synthetischen Daten und realen Geländeinformationen erstellt, um eine möglichst hohe Realitätsnähe zu gewährleisten.
-    \item \textbf{Durchführung der Simulationen:} 
-    Beide Navigationsansätze (autonom vs. \ac{UAV}-unterstützt) werden in den verschiedenen Umgebungen getestet. 
-    Die Experimente werden in mehreren Iterationen durchgeführt, um eine ausreichende Datenmenge zu generieren und statistisch relevante Ergebnisse zu erzielen.
-    \item \textbf{Datenanalyse:} 
-    Zeit- und Präzisionsdaten werden erfasst und mittels statistischer Methoden ausgewertet, um die Effizienz und Robustheit der Ansätze zu vergleichen.  
-    Hierbei werden insbesondere die Varianz der Ergebnisse und die Robustheit analysiert.
+    \item Vorbereitung der Simulationsumgebungen: Es werden verschiedene Geländetypen simuliert, deren genaue Ausgestaltung noch festgelegt wird. Diese Szenarien werden durch eine Kombination aus synthetischen Daten und realen Geländeinformationen erstellt, um eine möglichst hohe Realitätsnähe zu gewährleisten \cite{ugv:system:indonesia}.
+    
+    \item Durchführung der Simulationen: Beide Naiigationsansätze (autonom vs. \ac{UAV}-unterstützt) werden in den verschiedenen Umgebungen getestet. Die Experimente werden in mehreren Iterationen durchgeführt, um eine ausreichende Datenmenge zu generieren und statistisch relevante Ergebnisse zu erzielen \cite{ugv:uav:cooperative:ranging}.
+    
+    \item Datenanalyse: Zeit- und Präzisionsdaten werden erfasst und mittels statistischer Methoden ausgewertet, um die Effizienz und Robustheit der Ansätze zu vergleichen \cite{ugv:resupply:scenario}. Hierbei werden insbesondere die Varianz der Ergebnisse und die Robustheit analysiert \cite{mil:ugv:attitudes}.
 \end{enumerate}
+
