@@ -165,6 +165,19 @@
   }
 }
 
+%% Definiert @MISC/KI Eintrag
+\DeclareBibliographyDriver{customa}{%
+  \printnames{author}%
+  % \newunit\newblockpunct
+  \setunit*{,\space}%
+  %\newunit\newblock
+  \setunit*{,\space}%
+  \printfield{version}%
+  \setunit*{,\space Zugriff am:\space}%  % Fügt "Zugriff am:" hinzu
+  \printurldate%
+  \finentry
+}
+
 \renewbibmacro*{cite}{%
   \iffieldundef{shorthand}
     {\ifthenelse{\ifnameundef{labelname}\OR\iffieldundef{labelyear}}
