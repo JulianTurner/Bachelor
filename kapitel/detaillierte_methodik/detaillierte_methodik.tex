@@ -1,6 +1,10 @@
 
 \section{Detaillierte Methodik}
 
+Die Literaturrecherche wird mithilfe von Topic Modelling nach Lutz und Lutz durchgeführt \cite{Lutz2023TopicMA}. 
+Diese Methode wird eingesetzt, um relevante wissenschaftliche Arbeiten systematisch zu analysieren und zentrale Themen sowie Forschungslücken zu identifizieren. 
+Durch die Anwendung des Topic Modellings können wiederkehrende Themen in der Literatur erkannt und strukturiert dargestellt werden, was die Grundlage für die theoretische Fundierung dieser Arbeit bildet.
+
 Die Experimente werden in der Simulationsumgebung \gls{AirSim} durchgeführt, einem hochrealistischen Simulator für autonome Fahrzeuge und Drohnen, der auf der \gls{Unreal Engine} basiert \cite{airsim2017fsr}. 
 \gls{AirSim} ermöglicht es, unterschiedliche Geländearten und Umgebungsbedingungen realistisch zu simulieren, was für die Untersuchung der Effizienz und Robustheit der verschiedenen bildbasierten Navigationsansätze von entscheidender Bedeutung ist \cite{mapless:ugv:navigation}. 
 Die Simulationen werden mehrere Szenarien umfassen, um die Leistungsfähigkeit der Navigationsalgorithmen unter verschiedenen Bedingungen zu testen \cite{multi:objective:ugv:navigation}.
@@ -12,10 +16,16 @@ Diese Algorithmen werden durch eine iterative Anpassung optimiert, um die bestm�
 Der experimentelle Ablauf gliedert sich in folgende Schritte:
 
 \begin{enumerate}
-    \item Vorbereitung der Simulationsumgebungen: Es werden verschiedene Geländetypen simuliert, deren genaue Ausgestaltung noch festgelegt wird. Diese Szenarien werden durch eine Kombination aus synthetischen Daten und realen Geländeinformationen erstellt, um eine möglichst hohe Realitätsnähe zu gewährleisten \cite{ugv:system:indonesia}.
+    \item Vorbereitung der Simulationsumgebungen: 
+      Es werden verschiedene Geländetypen simuliert, deren genaue Ausgestaltung noch festgelegt wird. 
+      Diese Szenarien werden durch eine Kombination aus synthetischen Daten und realen Geländeinformationen erstellt, um eine möglichst hohe Realitätsnähe zu gewährleisten \cite{ugv:system:indonesia}.
     
-    \item Durchführung der Simulationen: Beide Naiigationsansätze (autonom vs. \ac{UAV}-unterstützt) werden in den verschiedenen Umgebungen getestet. Die Experimente werden in mehreren Iterationen durchgeführt, um eine ausreichende Datenmenge zu generieren und statistisch relevante Ergebnisse zu erzielen \cite{ugv:uav:cooperative:ranging}.
+    \item Durchführung der Simulationen: 
+      Beide Navigationsansätze (autonom vs. \ac{UAV}-unterstützt) werden in den verschiedenen Umgebungen getestet. 
+      Die Experimente werden in mehreren Iterationen durchgeführt, um eine ausreichende Datenmenge zu generieren und statistisch relevante Ergebnisse zu erzielen \cite{ugv:uav:cooperative:ranging}.
     
-    \item Datenanalyse: Zeit- und Präzisionsdaten werden erfasst und mittels statistischer Methoden ausgewertet, um die Effizienz und Robustheit der Ansätze zu vergleichen \cite{ugv:resupply:scenario}. Hierbei werden insbesondere die Varianz der Ergebnisse und die Robustheit analysiert \cite{mil:ugv:attitudes}.
+    \item Datenanalyse: 
+      Zeit- und Präzisionsdaten werden erfasst und mittels statistischer Methoden ausgewertet, um die Effizienz und Robustheit der Ansätze zu vergleichen \cite{ugv:resupply:scenario}. 
+      Hierbei werden insbesondere die Varianz der Ergebnisse und die Robustheit analysiert \cite{mil:ugv:attitudes}.
 \end{enumerate}
 
