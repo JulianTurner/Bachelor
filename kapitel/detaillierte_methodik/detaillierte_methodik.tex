@@ -1,16 +1,16 @@
 
 \section{Detaillierte Methodik}
 
-Die Literaturrecherche wird mithilfe von Topic Modelling nach Lutz und Lutz durchgeführt \cite{Lutz2023TopicMA}. 
-Diese Methode wird eingesetzt, um relevante wissenschaftliche Arbeiten systematisch zu analysieren und zentrale Themen sowie Forschungslücken zu identifizieren. 
-Durch die Anwendung des Topic Modellings können wiederkehrende Themen in der Literatur erkannt und strukturiert dargestellt werden, was die Grundlage für die theoretische Fundierung dieser Arbeit bildet.
+Die Literaturrecherche wird mithilfe von Topic Modelling nach Lutz und Lutz durchgeführt. 
+Diese Methode wird eingesetzt, um relevante wissenschaftliche Arbeiten systematisch zu analysieren und zentrale Themen sowie Forschungslücken zu identifizieren \cite{Lutz2023TopicMA}. 
+Durch die Anwendung des Topic Modellings können wiederkehrende Themen in der Literatur erkannt und strukturiert dargestellt werden \cite{Lutz2023TopicMA}, was die Grundlage für die theoretische Fundierung dieser Arbeit bildet.
 
 Die Experimente werden in der Simulationsumgebung \gls{AirSim} durchgeführt, einem hochrealistischen Simulator für autonome Fahrzeuge und Drohnen, der auf der \gls{Unreal Engine} basiert \cite{airsim2017fsr}. 
 \gls{AirSim} ermöglicht es, unterschiedliche Geländearten und Umgebungsbedingungen realistisch zu simulieren, was für die Untersuchung der Effizienz und Robustheit der verschiedenen bildbasierten Navigationsansätze von entscheidender Bedeutung ist \cite{mapless:ugv:navigation}. 
 Die Simulationen werden mehrere Szenarien umfassen, um die Leistungsfähigkeit der Navigationsalgorithmen unter verschiedenen Bedingungen zu testen \cite{multi:objective:ugv:navigation}.
 
 Für die Erstellung der Wegpunkte wird \gls{OpenCV} verwendet, um den Videostream des \ac{UAV} und des \ac{UGV} auszuwerten und die relevanten Informationen für die Navigation des Fahrzeugs zu extrahieren \cite{autonomous:flight:uwb:positioning}. 
-Die Algorithmen, die dabei zum Einsatz kommen, umfassen unter anderem Optical Flow, Kantenextraktion und \gls{Feature Matching}, um Hindernisse zu identifizieren und den sichersten Pfad zu bestimmen \cite{image:processing:uav:autonomous}. 
+Die Algorithmen, die dabei zum Einsatz kommen, umfassen unter anderem Optical Flow, Kantenextraktion und \gls{Feature Matching}, um Hindernisse zu identifizieren und den unter anderem sichersten oder schnellesten Pfad zu bestimmen \cite{image:processing:uav:autonomous}. 
 Diese Algorithmen werden durch eine iterative Anpassung optimiert, um die bestmögliche Leistung unter realen Bedingungen zu erzielen \cite{ugv:coverage:energy:efficient}.
 
 Der experimentelle Ablauf gliedert sich in folgende Schritte:
